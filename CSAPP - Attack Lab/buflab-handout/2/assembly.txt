@@ -1,0 +1,11 @@
+
+assembly.o：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <.text>:
+   0:	b8 a0 49 6e 3e       	mov    $0x3e6e49a0,%eax
+   5:	89 04 25 00 d1 04 08 	mov    %eax,0x804d100
+   c:	68 9d 8c 04 08       	pushq  $0x8048c9d
+  11:	c3                   	retq   

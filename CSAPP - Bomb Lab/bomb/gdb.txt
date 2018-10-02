@@ -1,0 +1,53 @@
+1.
+objdump -d bomb > bomb.txt
+gdb bomb
+b phase_1
+run
+disas
+stepi
+stepi
+stepi
+x $esi
+quit
+
+2.
+gdb bomb
+b phase_1
+b phase_2
+run
+continue
+disas
+quit
+
+3.
+gcd bomb
+b phase_3
+run
+disas
+x/s 0x4025cf
+quit
+
+4.
+gdb bomb
+b phase_4
+run
+disas
+x/s 0x4025cf
+quit
+
+5.
+gdb bomb
+b phase_5
+run
+disas
+x/s 0x40245e
+x/s 0x4024b0
+quit
+
+6.
+gdb bomb
+b phase_6
+run
+disas
+x/24 0x6032d0
+quit
